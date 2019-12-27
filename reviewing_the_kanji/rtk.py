@@ -4,12 +4,13 @@
 # Expression must have two astericks around the kanji you want to have stories searched for
 # E.g. blah blah *some kanji* blah blah
 
+import os
 import re
 import json
 from anki.hooks import addHook
 
 def onFocusLost(flag, n, fidx):
-    rtkStoriesPath = '/Users/adam/Documents/Anki/addons/rtk.json'
+    os.getcwd() + '/rtk.json'
     from aqt import mw
     # japanese model?
     expression = None
